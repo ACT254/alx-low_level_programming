@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - The entry point for the program
+ *  main - The entry point for the program
+ *  @parameter: There is no parameter for this function
  *
- *
- * Return: The function returns a value of zero
+ *  Return: The function returns a value of zero
  */
 int main(void)
 {
