@@ -7,9 +7,9 @@
  *
  *  Return: The function returns a value of zero
  */
-int main (void)
+int main(void)
 {
-	int n,last_digit;
+	int n, last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
