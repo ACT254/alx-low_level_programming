@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
  * main - The entry point for the program
+ *
  * Return: The function returns a value of zero
  */
 int main(void)
