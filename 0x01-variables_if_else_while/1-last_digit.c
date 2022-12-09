@@ -10,11 +10,11 @@
 int main(void)
 {
 	int n;
+	float last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	float last_digit;
-	last_digit = n % 10;
+	last_digit = abs(n % 10);
 
 if(last_digit > 5)
 {
