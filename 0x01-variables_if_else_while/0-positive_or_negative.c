@@ -4,6 +4,8 @@
 /**
  *  main - The entry point for the program
  *
+ *
+ *  This gives the return value for the function
  *  Return: The function returns a value of zero
  */
 int main(void)
