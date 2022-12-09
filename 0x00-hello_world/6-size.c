@@ -3,7 +3,7 @@
   * main - entry point for the program
   * Return: returns 0 if the program is successful
   */
-int main()
+int main(void)
 {
 	int a;
 	long int b;
