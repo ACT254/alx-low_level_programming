@@ -5,7 +5,7 @@
  * main - The entry point for the program
  * Return: The function returns a value of zero
  */
-int main (void)
+int main(void)
 {
 	int n;
 	srand(time(0));
