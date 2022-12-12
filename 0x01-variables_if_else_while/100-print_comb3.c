@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
   * main - entry point for the program
   * Return: returns 0 if the program is executed successfully
