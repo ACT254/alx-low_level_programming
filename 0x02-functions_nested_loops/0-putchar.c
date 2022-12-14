@@ -9,7 +9,6 @@ int main(void)
 {
 	char mychar[] = "_putchar";
 	int n;
-	int _putchar(char c);
 
 	for (n = 0; n <= 7; n++)
 	{
