@@ -2,7 +2,7 @@
 
 /**
   * main - entry point to the program
-  *
+i  *
   * Return: On success 1
   */
 int main(void)
@@ -14,5 +14,5 @@ int main(void)
 	{
 		_putchar(mychar[n]);
 	}
-	return (0);
+	return (1);
 }
