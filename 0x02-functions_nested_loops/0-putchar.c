@@ -7,7 +7,7 @@
   */
 int main(void)
 {
-	char mychar[] = "_putchar\n";
+	char mychar[] = "_putchar";
 	int n;
 	int _putchar(char c);
 
@@ -15,5 +15,6 @@ int main(void)
 	{
 		_putchar(mychar[n]);
 	}
+	_putchar('\n');
 	return (0);
 }
