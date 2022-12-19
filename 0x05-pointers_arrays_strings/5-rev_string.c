@@ -10,11 +10,14 @@
 void rev_string(char *s)
 {
 	int n, k, j, m;
+	char s_2[50];
+
 
 	n = 0;
 
 	while (*(s + n) != '\0')
 	{
+		s_2[n] = *(s + n);
 		n++;
 	}
 
@@ -24,7 +27,7 @@ void rev_string(char *s)
 	for (j = 0; j <= k; j++)
 	{
 		m = k - j;
-		*(s + j) = *(s + m);
+		*(s + j) = *(s_2 + m);
 
 	}
 }
