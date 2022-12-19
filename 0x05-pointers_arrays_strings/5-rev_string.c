@@ -9,15 +9,15 @@
 
 void rev_string(char *s)
 {
-	int n = 0;
+	int n, k, j;
+	n = 0;
 
 	while (*(s + n) != '\0')
 	{
 		n++;
 	}
 
-	int k = n - 1;
-	int j = 0;
+	k = n - 1;
 
 	for (j = 0; j <= k; j++)
 	{
