@@ -10,8 +10,7 @@
 void rev_string(char *s)
 {
 	int n, k, j, m;
-	char s_2[50];
-
+	char s_2[20];
 
 	n = 0;
 
