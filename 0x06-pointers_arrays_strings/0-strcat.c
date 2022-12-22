@@ -27,7 +27,7 @@ char *_strcat(char *dest, char *src)
 	}
 
 	/* adding the null terminator */
-	*end = '/0';
+	*end = '\0';
 
 	return (dest);
 }
