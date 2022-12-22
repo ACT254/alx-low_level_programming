@@ -11,23 +11,28 @@
 char *_strcat(char *dest, char *src)
 {
 	/* determining the end of the first string */
+	char *a;
+	char *b;
 
-	while (*dest != '\0')
+	a = dest;
+	b = src;
+
+	while (*a != '\0')
 	{
-		dest++;
+		a++;
 	}
 
 	/* concatenating the second string */
 
-	while (*src != '\0')
+	while (*b != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		*a = *b;
+		a++;
+		b++;
 	}
 
 	/* adding the null terminator */
-	*end = '\0';
+	*b = '\0';
 
 	return (dest);
 }
