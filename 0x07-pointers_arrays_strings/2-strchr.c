@@ -25,6 +25,7 @@ char *_strchr(char *s, char c)
 		else
 		{
 			n++;
+			s++;
 		}
 
 	}
