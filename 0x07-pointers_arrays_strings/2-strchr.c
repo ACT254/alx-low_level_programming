@@ -12,13 +12,11 @@ char *_strchr(char *s, char c)
 {
 	int n = 0;
 	int counter = 0;
-	char *p;
 
 	while (*(s + n) != '\0')
 	{
 		if (*(s + n) == c)
 		{
-			p = s;
 			counter++;
 			break;
 		}
@@ -31,10 +29,39 @@ char *_strchr(char *s, char c)
 	}
 	if (counter != 0)
 	{
-		return (p);
+		return (s);
 	}
 	else
 	{
 		return (NULL);
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
