@@ -1,7 +1,2 @@
-# More Pointers, Arrays and Strings
-
-This project explores more pointers, arrays and strings. It enables one to get more practice on this concepts.
-
-## Task 0
-
-Writing a function that fills the memoery with a constant byte.
+**Holberton Proyect - Week 5**
+*0x07. C - Even more pointers, arrays and strings*
