@@ -1,2 +1,2 @@
-# Recursion
-This project shows how function recursion in C can be used to solve problems.
+**Holberton Proyect - Week 5**
+*0x08. C - Recursion*
