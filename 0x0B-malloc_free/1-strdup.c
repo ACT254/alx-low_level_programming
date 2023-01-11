@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	else if (ptr == NULL)
 	{
@@ -37,4 +37,4 @@ char *_strdup(char *str)
 	return (ptr);
 }
 
-
+i
