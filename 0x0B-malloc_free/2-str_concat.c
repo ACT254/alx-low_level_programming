@@ -10,6 +10,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	int k, m;
 	int i = 0;
 	int j = 0;
 	char *ptr;
@@ -25,12 +26,12 @@ char *str_concat(char *s1, char *s2)
 	}
 	ptr = malloc((i + j + 1) * sizeof(char));
 
-	for (int k = 0; k < i; k++)
+	for (k = 0; k < i; k++)
 	{
 		ptr[k] = s1[k];
 	}
 
-	for (int m = 0; m < j; m++)
+	for (m = 0; m < j; m++)
 	{
 		ptr[i + m] = s2[m];
 	}
