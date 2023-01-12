@@ -14,12 +14,12 @@ char *str_concat(char *s1, char *s2)
 	int j = 0;
 	char *ptr;
 
-	while (s1[i] != NULL)
+	while (s1[i] != '\0')
 	{
 		i++;
 	}
 
-	while (s2[j] != NULL)
+	while (s2[j] != '\0')
 	{
 		j++;
 	}
