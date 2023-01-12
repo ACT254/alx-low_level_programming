@@ -14,6 +14,22 @@ char *str_concat(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 	char *ptr;
+	char *empty_string = NULL;
+
+	empty_string = malloc(1);
+	*empty_string = '\0';
+
+	/* NuLL string taken as empty string */
+
+	if (s1 == NULL)
+	{
+		s1 = empty_string;
+	}
+	if (s2 == NULL)
+	{
+		s2 = empty_string;
+	}
+
 
 	while (s1[i] != '\0')
 	{
