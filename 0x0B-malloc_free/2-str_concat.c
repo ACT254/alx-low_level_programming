@@ -19,9 +19,6 @@ char *str_concat(char *s1, char *s2)
 
 	empty_string = malloc(1);
 	*empty_string = '\0';
-
-	/* NuLL string taken as empty string */
-
 	if (s1 == NULL)
 	{
 		s1 = empty_string;
@@ -30,13 +27,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = empty_string;
 	}
-
-
 	while (s1[i] != '\0')
 	{
 		i++;
 	}
-
 	while (s2[j] != '\0')
 	{
 		j++;
@@ -46,24 +40,14 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (x);
 	}
-
 	for (k = 0; k < i; k++)
 	{
 		ptr[k] = s1[k];
 	}
-
 	for (m = 0; m < j; m++)
 	{
 		ptr[i + m] = s2[m];
 	}
-
-	/* add the null terminator */
 	ptr[i + j + 1] = '\0';
-
-	/* control flow for the output */
-
 	return (ptr);
 }
-
-
-
