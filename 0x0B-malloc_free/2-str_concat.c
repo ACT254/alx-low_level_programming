@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 	char *empty_string = NULL;
 
-	empty_string = malloc(2);
+	empty_string = malloc(1);
 	*empty_string = '\0';
 
 	/* NuLL string taken as empty string */
