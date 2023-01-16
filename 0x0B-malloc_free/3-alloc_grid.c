@@ -16,21 +16,25 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 	{
-		return (x);
+		return (NULL);
 	}
 
 	/* allocating memory to the rows */
 	arr = (int **)malloc(height * sizeof(int *));
+	if (arr == NULL)
+		return (NULL);
+
 	/* allocating memory for the columns */
 	for (i = 0; i < height; i++)
 	{
 		arr[i] = (int *)malloc(width * sizeof(int));
+		if (arr[i] == NULL)
+		{
+			free(arr);
+			return (NULL);
+		}
 	}
-	if (arr == NULL)
-	{
-		free(arr);
-		return (x);
-	}
+
 	/* assign elements to the array */
 	for (i = 0; i < height; i++)
 	{
