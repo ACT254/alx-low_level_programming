@@ -29,7 +29,7 @@ int **alloc_grid(int width, int height)
 	if (arr == NULL)
 	{
 		free(arr);
-		return (0);
+		return (x);
 	}
 	/* assign elements to the array */
 	for (i = 0; i < height; i++)
