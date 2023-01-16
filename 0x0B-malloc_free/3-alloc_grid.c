@@ -20,14 +20,15 @@ int **alloc_grid(int width, int height)
 	}
 
 	/* allocating memory to the rows */
-	arr = (int**)malloc(height * sizeof(int*));
+	arr = (int **)malloc(height * sizeof(int *));
 	/* allocating memory for the columns */
 	for (i = 0; i < height; i++)
 	{
-		arr[i] = (int*)malloc(width * sizeof(int));
+		arr[i] = (int *)malloc(width * sizeof(int));
 	}
 	if (arr == NULL)
 	{
+		free(arr);
 		return (0);
 	}
 	/* assign elements to the array */
