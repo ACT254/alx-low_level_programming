@@ -1,5 +1,5 @@
-#ifndef DOG_INIT
-#define DOG_INIT
+#include "dog.h"
+#include <stdio.h>
 /**
   * init_dog - initializes a dog variable
   * @d: the pointer to the struct
@@ -7,7 +7,6 @@
   * @age: the age of the dog
   * @owner: the name of the owner of the dog
   *
-  * Return: nothing
   */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
@@ -19,5 +18,3 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		d->owner = owner;
 	}
 }
-
-#endif
