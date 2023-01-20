@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_pointes.h"
+#include "function_pointers.h"
 
 /**
   * array_iterator - perfoms a fuction on all the elements of an array
