@@ -1,3 +1,4 @@
+#include "variadic_functions.h"
 /**
   * sum_them_all - gets the sum of all the parameters
   * @n: the number of values to be added
