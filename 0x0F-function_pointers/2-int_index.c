@@ -1,34 +1,36 @@
 #include <stdio.h>
 #include "function_pointers.h"
-
 /**
-  * int_index - searches for an integer and returns index of first occurence
-  *
-  * @array: a pointer to the array to be used for searching
-  * @size: the size of the array
-  * @cmp: a pointer to the function which will do any comparisons
-  *
-  * Return: the index of the first occurence of the integer
-  */
+ * int_index - function that searches
+ * for an integer
+ *
+ * @array: array with parameters
+ * @size: size of the array
+ * @cmp: function to call function
+ *
+ * Return: returns the index of the first element
+ * for which the cmp function does not return 0
+ */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	if (size <= 0)
-		return (-1);
-	int i = 0, index = 0;
+	int i;
 
-	while (i < size)
+	if (array == NULL || cmp == NULL)
 	{
-		if (cmp(array[i]) == 0)
-		{
-			index++;
-			i++;
-		}
-		else
-		{
-			return (index);
-			break;
-		}
+		return (-1);
 	}
 
+	if (size <= 0)
+	{
+		return (-1);
+	}
+
+	for (i = 0; i < size; i++)
+	{
+		if ((*cmp)(array[i]) == 1)
+		{
+			return (i);
+		}
+	}
 	return (-1);
 }
